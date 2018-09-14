@@ -146,10 +146,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="base\constant.cpp" />
     <ClCompile Include="btree\node.cpp" />
+    <ClCompile Include="bucket\bucket.cpp" />
+    <ClCompile Include="db\Cursor.cpp" />
+    <ClCompile Include="db\Tx.cpp" />
+    <ClCompile Include="page\page.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="base\constant.h" />
     <ClInclude Include="btree\node.h" />
+    <ClInclude Include="bucket\bucket.h" />
+    <ClInclude Include="db\Cursor.h" />
+    <ClInclude Include="db\Tx.h" />
+    <ClInclude Include="page\page.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

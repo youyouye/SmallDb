@@ -1,5 +1,8 @@
 #pragma once
 #include <vector>
+#include <memory>
+
+class Bucket;
 
 class INode 
 {
@@ -26,8 +29,8 @@ public:
 	int NumChildren();
 	Node* NextSibling();
 	Node* PrevSibling();
-	void Put();
-	void Del();
+	void Put(const std::string& old_key,const std::string& new_key,const std::string& value,int64_t pgid,int32_t flags);
+	void Del(const std::string& key);
 	void Read();
 	void Write();
 	std::vector<Node*> Split(int page_size);
@@ -37,9 +40,9 @@ public:
 	void Rebalance();
 	void RemoveChild(Node* target);
 	void Dereference();
+	void Free();
 private:
-
-private:
+	std::weak_ptr<Bucket> bucket_;
 	bool is_leaf_;
 	bool is_unbalanced_;
 	bool is_spilled_;

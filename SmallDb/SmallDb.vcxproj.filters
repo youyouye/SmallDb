@@ -18,9 +18,39 @@
     <ClCompile Include="btree\node.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="bucket\bucket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="page\page.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base\constant.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="db\Tx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="db\Cursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="btree\node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bucket\bucket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="page\page.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base\constant.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="db\Tx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="db\Cursor.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
