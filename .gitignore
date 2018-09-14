@@ -1,0 +1,6 @@
+SmallDb.VC.db
+.vs
+Debug
+x64
+SmallDb\x64
+SmallDb\SmallDb.vcxproj.user
